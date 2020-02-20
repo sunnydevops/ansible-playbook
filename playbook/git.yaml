@@ -1,0 +1,8 @@
+---
+- hosts: ubuntu
+  become: yes
+  tasks:
+  - apt:
+      name: git
+      state: present
+ 
