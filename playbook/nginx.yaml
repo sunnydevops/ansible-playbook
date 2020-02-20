@@ -1,0 +1,9 @@
+---
+- hosts: ubuntu
+  become: true
+  tasks:
+    - name: "installing nginx"
+      apt:
+        name: nginx
+        state: present
+        
